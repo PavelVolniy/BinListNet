@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="horizontal">
+
+  <LinearLayout
+    android:gravity="center"
+    android:layout_weight="1"
+    android:id="@+id/ll_brand"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="@id/ll_bank"
+    app:layout_constraintTop_toBottomOf="@id/ll_type">
+
+    <TextView
+      android:layout_marginBottom="13dp"
+      style="@style/titleText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="BRAND" />
+
+    <TextView
+      style="@style/valueTextAction"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Visa/Dankort" />
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      style="@style/titleText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="PREPAID" />
+
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:tabMode="fixed"
+      app:tabSelectedTextColor="@color/base_black"
+      app:tabTextColor="@color/title_color">
+
+      <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="Yes"
+        android:textColor="@color/prepaid_selector"
+        android:textSize="10sp" />
+
+      <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:gravity="center"
+        android:text="No"
+        android:textColor="@color/prepaid_selector"
+        android:textSize="10sp" />
+
+    </RadioGroup>
+  </LinearLayout>
+</LinearLayout>

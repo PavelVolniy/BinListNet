@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="start"
+      android:text="Length" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="end"
+      android:text="Luhn" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/valueTextAction"
+      android:layout_marginTop="13dp"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="start"
+      android:text="16" />
+
+    <RadioGroup
+      android:gravity="end"
+      android:orientation="horizontal"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1">
+
+      <RadioButton
+        android:text="Yes"
+        android:button="@null"
+        android:checked="true"
+        android:textColor="@color/prepaid_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+      <RadioButton
+        android:textColor="@color/prepaid_selector"
+        android:text="No"
+        android:button="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RadioGroup>
+  </LinearLayout>
+</LinearLayout>
