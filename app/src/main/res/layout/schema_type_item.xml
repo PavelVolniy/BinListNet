@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:baselineAligned="false"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="horizontal">
@@ -12,14 +13,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="@id/ll_bank">
+    app:layout_constraintTop_toTopOf="parent">
 
     <TextView
       style="@style/titleText"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:gravity="start"
-      android:text="SCHEME/NETWORK" />
+      android:text="@string/scheme_network_text" />
 
     <TextView
       android:id="@+id/tv_scheme"
@@ -42,10 +43,11 @@
       style="@style/titleText"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="TYPE" />
+      android:text="@string/type_text" />
 
 
     <TextView
+      android:id="@+id/tv_type"
       style="@style/valueTextAction"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"

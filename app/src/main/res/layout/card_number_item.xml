@@ -14,15 +14,15 @@
       android:layout_height="wrap_content"
       android:layout_weight="1"
       android:gravity="start"
-      android:text="Length" />
+      android:text="@string/length_text" />
 
     <TextView
       android:layout_width="wrap_content"
-      android:layout_marginEnd="30dp"
       android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
       android:layout_weight="1"
       android:gravity="end"
-      android:text="Luhn" />
+      android:text="@string/luhn_text" />
   </LinearLayout>
 
   <LinearLayout
@@ -31,34 +31,37 @@
     android:orientation="horizontal">
 
     <TextView
+      android:id="@+id/tv_length"
       style="@style/valueTextAction"
-      android:layout_marginTop="13dp"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_marginTop="13dp"
       android:layout_weight="1"
       android:gravity="start"
       android:text="16" />
 
     <RadioGroup
-      android:gravity="end"
-      android:orientation="horizontal"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_weight="1">
+      android:layout_weight="1"
+      android:gravity="end"
+      android:orientation="horizontal">
 
       <RadioButton
-        android:text="Yes"
-        android:button="@null"
-        android:checked="true"
-        android:textColor="@color/prepaid_selector"
+        android:id="@+id/rb_yes"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="@string/yes_rbt"
+        android:textColor="@color/prepaid_selector" />
+
       <RadioButton
-        android:textColor="@color/prepaid_selector"
-        android:text="No"
-        android:button="@null"
+        android:id="@+id/rb_no"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="@string/no_rbt"
+        android:textColor="@color/prepaid_selector" />
 
     </RadioGroup>
   </LinearLayout>
