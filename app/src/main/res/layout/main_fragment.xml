@@ -5,10 +5,14 @@
   android:layout_height="match_parent">
 
   <TextView
+    android:maxLength="8"
     android:id="@+id/tv_card_number"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
+    android:background="@drawable/bg_corner_radius_10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
     android:text="4571 7360"
     android:textColor="@color/base_black"
     android:textSize="24sp"

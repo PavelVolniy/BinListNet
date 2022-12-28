@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface BinListApi {
 
   @GET("45717360")
-  suspend fun getDataFromServer(): JsonFromBinListNet
+  suspend fun getDataFromServer(/*@StringRes res: Map<String, String>*/): JsonFromBinListNet
 }

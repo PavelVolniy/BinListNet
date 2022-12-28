@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical">
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:layout_margin="5dp"
+  android:background="@drawable/bg_corner_radius_20dp"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:padding="10dp">
 
   <TextView
     android:id="@+id/tv_title_item_bank"
@@ -19,6 +24,7 @@
     android:text="Jyske Bank, Hjorring" />
 
   <TextView
+    android:layout_marginTop="10dp"
     android:id="@+id/tv_link_bank"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -26,6 +32,7 @@
     android:textColor="@color/link_color" />
 
   <TextView
+    android:layout_marginTop="10dp"
     android:id="@+id/tv_phone_bank"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

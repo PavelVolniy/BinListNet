@@ -8,8 +8,8 @@
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
   <color name="base_black">#0F0F0F</color>
-  <color name="base_white">#FF00000A</color>
+  <color name="base_white">#FDFDFD</color>
   <color name="bg_app">#BAB9B9</color>
   <color name="link_color">#4253EA</color>
-  <color name="title_color">#BDBDBD</color>
+  <color name="title_color">#8F8787</color>
 </resources>

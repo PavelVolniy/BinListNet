@@ -1,3 +1,17 @@
 <resources>
   <string name="app_name">Binlist.net</string>
+  <string name="brand_text">BRAND</string>
+  <string name="prepaid_text">PREPAID</string>
+  <string name="yes_rbt">Yes</string>
+  <string name="no_rbt">No</string>
+  <string name="scheme_network_text">SCHEME/NETWORK</string>
+  <string name="type_text">TYPE</string>
+  <string name="country_text">COUNTRY</string>
+  <string name="latitude_text">latitude:</string>
+  <string name="longitude_text">longitude:</string>
+  <string name="bank_text">BANK</string>
+  <string name="length_text">Length</string>
+  <string name="luhn_text">Luhn</string>
+  <string name="search_hint_text">enter number card</string>
+  <string name="enter_number_your_card_text">enter number your card</string>
 </resources>
